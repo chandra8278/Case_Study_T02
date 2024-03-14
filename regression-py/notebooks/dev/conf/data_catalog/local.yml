@@ -73,11 +73,41 @@ datasets:
       uri: ${core.data_base_path}/raw/Data/social_media_data.parquet
       driver_params: {}
 
-  processed:
-    sales:
+  Processed:
+    merge_df_them_prod:
       type: ds
       format: parquet
-      uri: ${core.data_base_path}/processed/sales/sales.parquet
+      uri: ${core.data_base_path}/processed/Data/merge_df_them_prod.parquet
+      driver_params: {}
+      
+    merge_df_social:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/processed/Data/merge_df_social.parquet
+      driver_params: {}
+      
+    merge_df_google:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/processed/Data/merge_df_google.parquet
+      driver_params: {}
+    
+    merge_df_sales:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/processed/Data/merge_df_sales.parquet
+      driver_params: {}
+      
+    merge_df_google_social_sales:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/processed/Data/merge_df_google_social_sales.parquet
+      driver_params: {}
+      
+    merge_df_google_social:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/processed/Data/merge_df_google_social.parquet
       driver_params: {}
 
   train:
